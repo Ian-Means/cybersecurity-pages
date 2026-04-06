@@ -1,0 +1,114 @@
+/* 
+Colors from Adobe
+Green           #00E000
+Dark Lime       #28A128
+Military Green  #306130
+Pink            #E00070
+Red Violet      #8B2E5D
+Grape           #36242D
+
+Background greys
+gainsboro       #DCDCDC
+lightgrey       #D3D3D3
+silver          #C0C0C0
+darkgrey        #A9A9A9
+grey            #808080
+dimgrey         #696969
+
+*/
+
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: dimgrey;
+    font-family: 'Courier New', Courier, monospace;
+}
+header {
+    position: relative;
+    width: 100%;
+    padding: 0.5em 0;
+    background-color: gray;
+    border: 3px solid #36242D;
+    border-radius: 6px;
+    text-align: center;
+    font-size: x-large;
+    color: #00E000;
+}
+header h1 {
+    margin: 0;
+}
+nav {
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+    padding: 0.2em 0;
+    background-color: silver;
+    border: 3px solid #8B2E5D;
+    border-radius: 6px;
+    font-size: large;
+}
+nav ul {
+    height: 1.1em;
+    margin: 0;
+    padding: 0;
+}
+nav li {
+    float: left;
+    list-style: none;
+    margin: 0;
+    padding: 0 1em;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+nav li a {
+    padding: 0 0.2em;
+    color: #306130;
+}
+nav li a:hover {
+    color: #E00070;
+    background-color: gainsboro;
+    border-radius: 1em;
+}
+footer {
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+    padding: 0.2em 1em;
+    background-color: silver;
+    border-radius: 6px;
+    font-size: small;
+    font-style: italic;
+    color: dimgrey;
+}
+.homeWrapper {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+article {
+    flex: 1 0 55%;
+    padding:0 1em;
+    margin-left: 10px;
+    background-color: darkgrey;
+    border: 3px solid #E00070;
+    border-radius: 6px;
+}
+aside {
+    flex: 1 0 35%;
+    margin: 0 10px;
+    padding:0 1em;
+    background-color: lightgray;
+    border: 3px solid #E00070;
+    border-radius: 6px;
+}
+/* @media screen and (max-width: 600px) {
+    .homeWrapper {
+        flex-direction: column;
+    }
+} */

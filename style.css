@@ -14,13 +14,14 @@ silver          #C0C0C0
 darkgrey        #A9A9A9
 grey            #808080
 dimgrey         #696969
-
 */
 
+/* All Pages */
 * {
     box-sizing: border-box;
 }
 body {
+    min-width: 300px;
     background-color: dimgrey;
     font-family: 'Courier New', Courier, monospace;
 }
@@ -49,8 +50,7 @@ nav {
     font-size: large;
 }
 nav ul {
-    height: 1.1em;
-    margin: 0;
+    margin:0 0 1.1em 0;
     padding: 0;
 }
 nav li {
@@ -83,6 +83,8 @@ footer {
     font-style: italic;
     color: dimgrey;
 }
+
+/* Home Page */
 .homeWrapper {
     position: relative;
     width: 100%;
@@ -107,8 +109,69 @@ aside {
     border: 3px solid #E00070;
     border-radius: 6px;
 }
-/* @media screen and (max-width: 600px) {
+
+/* Scams Page */
+.scamWrapper {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+.scamInfoCard {
+    flex: 1 0 200px;
+    height: 200px;
+    margin: 10px;
+    background-color: darkgray;
+    border: 3px solid #E00070;
+    border-radius: 12px;
+    box-shadow: 8px 8px 6px #222222;
+}
+/* Advice Page */
+.adviceWrapper {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+    margin-top: 10px;
+}
+.adviceInfoCard {
+    flex: 0 0 150px;
+    margin: 0 10px 15px;
+    background-color: darkgray;
+    border: 3px solid #E00070;
+    border-radius: 12px;
+    box-shadow: 8px 8px 6px #222222;
+}
+
+@media screen and (max-width: 600px) {
+    /* All Pages */
+    nav {
+        font-size: medium;
+    }
+    nav ul {
+        margin: 0;
+    }
+    nav li {
+        float: none;
+        list-style: disc inside;
+        padding: 0 0.5em;
+    }
+    nav li a {
+        padding: 0 0.1em;
+    }
+    /* Home Page */
     .homeWrapper {
         flex-direction: column;
     }
-} */
+    article {
+        margin: 0;
+    }
+    aside {
+        margin: 10px 0 0;
+    }
+    /* Scams Page */
+    /* Advice Page */
+}
